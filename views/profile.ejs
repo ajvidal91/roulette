@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Admin</title>
+  <link rel="stylesheet" href="">
+  <script type="text/javascript" src="main.js">
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header text-center">
+      <h1><span class="fa fa-anchor"></span> Admin Page</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+    <div class="row">
+      <!-- LOCAL INFORMATION -->
+      <div class="col-sm-6">
+        <div class="well">
+          <h3><span class="fa fa-user"></span> Local</h3>
+          <% if (user.local.email) { %>
+            <p>
+              <strong>id</strong>:
+              <%= user._id %><br>
+                <strong>email</strong>:
+                <%= user.local.email %><br>
+                  <strong>password</strong>:
+                  <%= user.local.password %>
+            </p>
+            <a href="/unlink/local" class="btn btn-default">Unlink</a>
+            <% } else { %>
+              <a href="/connect/local" class="btn btn-default">Connect Local</a>
+              <% } %>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h3>Status</h3>
+        <ul class="Status">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="user">
+              <span><%= messages[i].name %></span>
+              <span><%= messages[i].wins %></span>
+              <span><%= messages[i].losses %></span>
+              <span><%= messages[i].casinoBank %></span>
+            </li>
+            <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

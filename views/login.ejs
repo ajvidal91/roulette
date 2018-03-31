@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Log-in</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>
+    <span>R</span>
+    <span>O</span>
+    <span>U</span>
+    <span>L</span>
+    <span>E</span>
+    <span>T</span>
+    <span>T</span>
+    <span>E</span>
+
+
+  </h1>
+  </header>
+
+
+  <div class="login-form-container" id="login-form">
+    <div class="login-form-content">
+      <div class="login-header">
+        <h3>Login Into Your Account!</h3>
+      </div>
+      <form method="post" action="" class="login-form">
+        <div class="input-container">
+
+          <input type="email" class="input" name="email" placeholder="Email" />
+        </div>
+        <div class="input-container">
+
+          <input type="password" id="login-password" class="input" name="password" placeholder="Password" />
+
+        </div>
+        <div class="rememberme-container">
+          <input type="checkbox" name="rememberme" id="rememberme" />
+          <label for="rememberme" class="rememberme"><span>Remember me</span></label>
+          <a class="forgot-password" href="#">Forgot Password?</a>
+        </div>
+        <input type="submit" name="login" value="Login" class="button" />
+        <a href="/signup" class="register">Register</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

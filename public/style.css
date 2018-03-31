@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+*{
+color: black;
+font-weight: 100;
+font-size: 20px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+color: black;
+text-decoration: underline;
+}
+
+body{
+margin: 0;
+padding: 0;
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+
+header{
+background-image: url(../img/gold-roulette.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+height: 350px;
+text-align: center;
+
+}
+
+header h1{
+  margin: 25px 0 0 38.6%;
+  padding: 0;
+}
+
+
+#login-form{
+width: 35%;
+height: 350px;
+margin: 125px auto;
+border: 5px solid #262626;
+background: #B12D2B;
+text-align: center;
+border-radius: 50%;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16), 30px 30px 30px rgba(0, 0, 0, 0.23);
+}
+
+#login-form h3, span, a {
+color: white;
+}
+
+
+
+.input{
+border-radius: 5px;
+}
+
+#login-password{
+margin-top: 5px;
+}
+
+h1 span{
+
+  background: #262626;
+  padding: 10px 20px;
+  display: table-cell;
+  box-shadow:inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+  animation: animate .5s infinite;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(0px);
+  box-shadow:inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);
+  }
+  50%
+  {
+    transform: translateY(-20px);
+    box-shadow:inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0.6);
+  }
+  100%
+  {
+    transform: translateY(0px);
+    box-shadow:inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);
+  }
+}
+
+h1 span:nth-child(1)
+{
+animation-delay: .2s;
+background: black;
+}
+h1 span:nth-child(2)
+{
+animation-delay: .4s;
+background: #B12D2B;
+}
+h1 span:nth-child(3)
+{
+animation-delay: .6s;
+background: black;
+}
+h1 span:nth-child(4)
+{
+animation-delay: .8s;
+background:#B12D2B;
+}
+h1 span:nth-child(5)
+{
+animation-delay: 1.0s;
+background: black;
+}
+h1 span:nth-child(6)
+{
+animation-delay: 1.2s;
+background: #B12D2B;
+}
+h1 span:nth-child(7)
+{
+animation-delay: 1.4s;
+background: black;
+}
+h1 span:nth-child(8)
+{
+animation-delay: 1.6s;
+background: #B12D2B;
+}

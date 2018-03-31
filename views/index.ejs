@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+
+
+
+<head>
+
+  <title>Roulette</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <div id="index-container">
+    <section>
+      <h1 class="playerBank"></h1>
+    </section>
+    <form action="/result" method="POST">
+      <fieldset>
+        <legend>User Place Your Bet:</legend>
+        <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span><%= messages[i].name %></span>
+              <span><%= messages[i].bet %></span>
+            </li>
+            <% } %>
+        </ul>
+        <input type="text" name="name" placeholder="NAME:">
+        <select id="betInput">
+        <option name="bet" value="$100">$100</option>
+        <option name="bet" value="$200">$200</option>
+        <option name="bet" value="$500">$500</option>
+        <option name="bet" value="All">All IN</option>
+     </select>
+
+        <input type="submit" value="Submit">
+        <button type="submit" class="black">BLACK</button>
+        <button type="submit" class="red">RED</button>
+        <button class="green">GREEN</button>
+      </fieldset>
+    </form>
+
+
+
+    <a href="/login"><button>LOGIN</button></a>
+  </div>
+</body>
+
+
+
+
+</html>
