@@ -1,6 +1,8 @@
 ##Incomplete
 still in the works
 
+![ROULETTE](/roulette.png)
+
 ## Installation
 
 1. Clone repo
